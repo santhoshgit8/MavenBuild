@@ -4,6 +4,8 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
+    network_mode: "host"
+    hostname: localhost
     ports:
-    - 9090:9090
+    - 8081:8081
     container_name: app1
